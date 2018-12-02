@@ -1,0 +1,73 @@
+page-settings {
+    .social_media{
+    border-radius: 8px;
+    color: color($colors,secondary);
+    position: relative;
+    padding: 10px;
+    font-size: 17px;
+    &:before{
+        content: '';    
+        background: url("../assets/images/bg.png") no-repeat;
+        background-size: cover;
+        background-position: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        width: 60%;
+        height: 100%;
+    }
+    &.facebook{
+        background: color($colors,facebook);
+        margin-bottom: 10px;
+    }
+    &.twitter{
+        background: color($colors,twitter);
+    }
+        p{
+            position: relative;
+            padding-left: 52px;
+            i{
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 34px;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+   
+   .account_setting{
+       padding: 20px 0 15px 0;
+       h3{
+           color: color($colors,secondary);
+       }
+       ion-list{
+           background: color($colors,lightcolor);
+           border-radius: 8px;
+           padding: 10px;
+           .item-ios{
+               background: none;
+               color:lighten(color($colors,dark), 5%); 
+               font-size: 16px;
+               .item-inner{
+                   padding: 0;
+               }
+           }
+           .item-md{
+               background: none;
+               color:lighten(color($colors,dark), 5%); 
+               .item-inner{
+                    padding: 0;
+                    .toggle-checked{
+                        .toggle-icon{
+                            background: lighten(color($colors,secondary), 10%);
+                        } 
+                    } 
+               }
+           }
+       }
+   }
+} 

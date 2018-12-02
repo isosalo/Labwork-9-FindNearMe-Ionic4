@@ -1,0 +1,60 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.tabs-ios { 
+    .tabbar{
+         box-shadow: 1px 0px 7px rgba(color($colors,dark),.3);
+         border: none !important;
+         top: 0 !important;
+        .icon-only {
+            min-height: 55px !important;
+        }
+    }
+    .tab-button[aria-selected=true] {
+        border-bottom: 3px solid color($colors,secondary);
+    }
+}
+.toolbar-ios{
+    box-shadow: 1px 0px 7px rgba(color($colors,dark),.3);
+    ion-title {
+        padding: 0 50px 1px;
+    }
+    .back-button-icon-ios {
+        font-size: 2.4rem;
+        margin-left: 5px;
+    }
+} 
+h3{
+    font-size: 1.7rem;
+}
+
+.selected-flag{
+   padding: 0 !important;
+}
+.intl-tel-input{
+   .flag-container{
+       padding: 0;
+       left: 8px !important;
+   }
+}  
+
+.platform-ios .tabs-ios .tabbar .icon-only{
+    padding-top: 12px;
+}
+.statusbar-padding .scroll-content{
+    padding-top: 16px !important;
+}

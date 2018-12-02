@@ -1,0 +1,114 @@
+<ion-content class="login_register" padding text-center>
+  <div class="logo">
+    <img src="assets/images/logo.png">
+    <p no-margin>Please login to continue</p>
+  </div>
+  <div class="login_form">
+    <ion-list  no-margin>
+
+      <ion-item no-lines no-padding>
+        <ion-input type="email" placeholder="Email address" value="" no-margin></ion-input>
+      </ion-item>
+
+      <ion-item no-lines no-padding>
+        <ion-input type="password" placeholder="Password" no-margin></ion-input>
+        <span (click)="forgotPassword()" item-end>forget</span>
+      </ion-item>
+
+    </ion-list>
+    <button  [navPush]="'TabsPage'" color="primary" ion-button block round>Login</button>
+  </div>
+  <div class="create_account">
+    <p text-uppercase>Don't have account?</p>
+    <button  [navPush]="'RegisterPage'"  text-uppercase ion-button clear>Sign up</button>
+  </div>
+</ion-content>
+
+
+<!--
+<ion-content class="login_register" padding text-center>
+    <div class="logo">
+      <img src="assets/imgs/logo.png">
+      <p no-margin>Howdy, login to continue</p>
+    </div>
+    <div class="login_form">
+      <ion-list  no-margin>
+
+        <ion-item no-lines no-padding>
+          <ion-input type="email" placeholder="Email address" value="" no-margin></ion-input>
+        </ion-item>
+
+        <ion-item no-lines no-padding>
+          <ion-input type="password" placeholder="Password" no-margin></ion-input>
+          <span (click)="forgotPassword()" item-end>forget</span>
+        </ion-item>
+
+      </ion-list>
+      <button  [navPush]="'TabsPage'" color="secondary" ion-button block round>Login</button>
+      
+      
+    </div>
+   
+    <div class="create_account">
+      <img src="assets/imgs/facebook.png" class="myBut"> 
+      
+      <img src="assets/imgs/twitter.png" class="twBut">
+ 
+    </div>
+     
+
+    <div class="create_account">
+      
+      
+      <button class="myButton" ion-button color="myWhite" text-uppercase round outline [navPush]="'RegisterPage'">No Account?</button>
+    </div>
+  
+  
+    <div class="create_account">
+      
+        <button  [navPush]="'RegisterPage'"  text-uppercase ion-button clear>Sign up</button>
+      </div>
+      
+</ion-content>
+
+// ==== Following is code for previous version of Find Near Me mobile App design ====
+// This is a login page of Find Near Me 
+<ion-content class="bg-image no-scroll" padding>
+   //Logo of App
+    <img src="assets/imgs/logo.png" class="logo">
+  
+     // Username and Password field with proper label 
+    <div>
+      <ion-list class="list" inset>
+        <ion-item class="label">
+          <ion-label color="myWhite" style="font-size:12px" stacked>Username</ion-label>
+          <ion-input type="text" placeholder="Enter Username"></ion-input>
+        </ion-item>
+  
+        <ion-item class="label">
+          <ion-label color="myWhite" style="font-size:12px" stacked>Password</ion-label>
+          <ion-input color="myWhite" type="password" placeholder="Enter Password"></ion-input>
+        </ion-item>
+      </ion-list>
+    </div>
+  
+     //Buttons 
+    <p class="text" style="font-family:open-sans; font-size:14px; color:#ebebeb">Forgot your password?</p>
+  
+    <div text-center>   Clicking buttons takes to Next Page that we will define in login.ts 
+      <button class="btnWidth" ion-button color="secondary" round [navPush]="nextPage">Login</button>
+    </div>
+  
+      <div text-center>
+      <button class="myButton" ion-button color="myWhite" round outline [navPush]="nextPage">Sign Up</button>
+    </div>
+  
+    <img src="assets/imgs/facebook.png" class="fb-button">
+  
+    <img src="assets/imgs/twitter.png" class="twitter-button">
+  
+  // Make sure to remember that eventually actions will be added, click events etc.,
+  </ion-content>
+  
+-->
+

@@ -1,0 +1,119 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #23d4ce,
+  secondary:  #9a0036,
+  lightcolor: #d9fbfb,
+  danger:     #f53d3d,
+  light:      #fff,
+  dark:       #222,
+  facebook:   #3b5999,
+  twitter:    #55acee,
+  whatsapp:   #4dc247,
+  google:     #dd4b39,
+  ratecolor:  #faca43
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+$toolbar-ios-title-text-align:left;
+$toolbar-ios-title-text-color:color($colors,secondary);
+$button-ios-height: 2.6em;
+$alert-ios-button-main-font-weight:normal;
+$searchbar-ios-background-color:none;
+$searchbar-ios-input-height:42px;
+$searchbar-ios-input-background-color: color($colors,lightcolor);
+$searchbar-ios-input-placeholder-color:color($colors,secondary);
+$searchbar-ios-input-clear-icon-color:color($colors,primary);
+$searchbar-ios-input-search-icon-color:color($colors,primary);
+$searchbar-ios-input-search-icon-size	:16px;
+$toolbar-ios-height:50px;
+$toolbar-ios-border-color: transparent;
+$toggle-md-track-background-color-on:#b9b8b8;
+$toggle-md-active-color: color($colors,primary);
+$toggle-md-track-background-color-off: #b9b8b8;
+$toggle-md-track-background-color-on: color($colors,primary); 
+$toggle-md-track-height:10px; 
+$toggle-md-track-width: 26px;  
+$toggle-md-handle-width:15px; 
+$toggle-md-handle-height:15px; 
+$toggle-md-handle-background-color-off:#eee;
+$action-sheet-ios-button-font-size:1.7rem;
+$action-sheet-ios-button-text-color:color($colors,dark);
+$action-sheet-ios-button-min-height:4.6rem;
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
